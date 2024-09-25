@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+      <style>
+
+      .formulario {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-green {
+        background-color: #4CAF50; 
+        color: white;
+      }
+
+      .donacionesimg {
+        width: 100%; 
+        height: 100%; 
+      }
+
+      .btn-custom {
+        background: linear-gradient(135deg, #396E25, #2A5020);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 30px;
+        margin: 10px;
+        width: 250px;
+        text-align: center;
+      }
+      
+      .btn-custom:hover {
+        background: linear-gradient(135deg, #2A5020, #396E25);
+        color: #fff;
+      }
+
+      h2 {
+        color: #396E25;
+        margin-bottom: 30px;
+        text-align: center;
+        padding-top: 2%;
+      }
+
+      </style>
+      </head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="img/Logo.png" class="custom-size" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">PROYECTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipo.html">EQUIPO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donaciones.html">DONACIONES</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 custom-border" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+        <div class="container-fluid">
+          <img src="img/donaciones.png" class="img-fluid full-width-img" alt="Donaciones">
+        </div>
+
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 formulario">
+            <h2>Donación personalizada</h2>
+            <form>
+              <div class="form-group">
+                <label for="fullName">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="fullName" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="amount">Monto a donar</label>
+                <input type="number" class="form-control" id="amount" required>
+              </div>
+              <div class="form-group">
+                <label for="paymentMethod">Método de pago</label>
+                <select class="form-control" id="paymentMethod" required>
+                    <option>Tarjeta de crédito</option>
+            <option>PayPal</option>
+            <option>Transferencia bancaria</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Comentarios</label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-green btn-block">Confirmar Donación</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<h2>¿No puedes donar ahora?</h2>
+    
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <button class="btn btn-custom">ÚNETE COMO VOLUNTARIO</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-custom">DIFUNDE NUESTRA MISIÓN</button>
+        </div>
+        <div class="col-md-4">
+          <div class="borde">
+            <button class="btn btn-custom">DONA RECURSOS AHORA</button>
+          </div>
+          </div>
+    </div>
+</div>
+
+  <div class="container-fluid p-0">
+    <img src="img/donacionesultimo.png" class="donacionesimg" alt="planta entre manos">
+  </div>
+
+
+<footer class="bg-dark text-white mt-5"></footer>
+    <div class="container-fluid p-4">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <img src="img/Logo.png" class="img-fluid" alt="logo" style="width:150px; height: auto;">
+            </div>
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0" style="padding:1%">
+                <p>© 2024 EcoVida - Todos los derechos reservados</p>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-end">
+                <a href="https://www.youtube.com" class="text-white me-2">
+                    <img src="img/Youtube.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+                </a>
+                <a href="https://www.facebook.com" class="text-white me-2">
+                    <img src="img/facebook.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+                </a>
+                <a href="https://www.instagram.com" class="text-white">
+                    <img src="img/Instagram.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

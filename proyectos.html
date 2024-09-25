@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .inicio {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            background: url(img/fondo\ proyectos.png) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 2;
+        }
+
+        .superposicion {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .btn-donaciones {
+            margin-top: 20px;
+        }
+
+        .btn-primary{
+          background-color: darkgreen;
+        }
+
+        .card{
+          background-color: rgb(77, 193, 77);
+        }
+
+        .contenido h2{
+          color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="img/Logo.png" class="custom-size" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proyectos.html">PROYECTOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="equipo.html">EQUIPO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donaciones.html">DONACIONES</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 custom-border" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+<section class="inicio">
+    <div class="superposicion"></div>
+    <div class="contenido">
+        <h2>NUESTROS PROYECTOS: ACCIONES QUE TRANSFORMAN</h2>
+        <p>¿Te interesa donar?</p>
+        <button class="btn btn-primary btn-donaciones">Enviar a Donaciones</button>
+    </div>
+</section>
+
+
+<div class="container mt-5">
+    <p class="text-center">En EcoVida llevamos a cabo proyectos que promueven la conservación del medio ambiente, la regeneración de ecosistemas y la sostenibilidad. </p>
+    </div>
+
+
+
+<div class="container my-5">
+    <div class="row">
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-effect">
+                <img src="img/limpieza de oceanos.jpg" class="card-img-top" alt="Proyecto 1">
+                <div class="card-body">
+                    <h5 class="titulo">LIMPIEZA DE OCÉANOS</h5>
+                    <p class="texto">Retiramos plásticos del océano con limpiezas y alianzas locales.</p>
+                    <a href="#" class="btn btn-primary">Explorar proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-effect">
+                <img src="img/proteccion de animales.jpg" class="card-img-top" alt="Proyecto 2">
+                <div class="card-body">
+                    <h5 class="titulo">PROTECCIÓN DE ANIMALES</h5>
+                    <p class="texto">Protegemos especies amenazadas con conservación y educación.</p>
+                    <a href="#" class="btn btn-primary">Explorar proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card hover-effect">
+                <img src="img/educacion ambiental.jpg" class="card-img-top" alt="Proyecto 3">
+                <div class="card-body">
+                    <h5 class="titulo">EDUCACIÓN AMBIENTAL</h5>
+                    <p class="texto">El proyecto enseña a jóvenes sobre el cuidado ambiental con talleres y campañas.</p>
+                    <a href="#" class="btn btn-primary">Explorar proyecto</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid p-0">
+    <img src="img/madretierra.png" class="img-fluid w-100" alt="Invitación día de la madre Tierra">
+</div>
+
+
+<footer class="bg-dark text-white mt-5">
+  <div class="container-fluid p-4">
+      <div class="row">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+              <img src="img/Logo.png" class="img-fluid" alt="logo" style="width:150px; height: auto;">
+          </div>
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0" style="padding:1%">
+              <p>© 2024 EcoVida - Todos los derechos reservados</p>
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+              <a href="https://www.youtube.com" class="text-white me-2">
+                  <img src="img/Youtube.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+              </a>
+              <a href="https://www.facebook.com" class="text-white me-2">
+                  <img src="img/facebook.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+              </a>
+              <a href="https://www.instagram.com" class="text-white">
+                  <img src="img/Instagram.png" alt="" class="rounded-circle img-fluid" style="width: 50px; height:auto;">
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
